@@ -1,0 +1,165 @@
+.nav-bar{
+    display: flex;
+    font-family: 'VT323', monospace;
+}
+.title{
+    flex: 1;
+}
+.nav1{
+    flex: 1;
+    text-align: right;
+    margin:auto;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav1 a{
+    color:green;
+}
+.nav1 a:hover{
+    background: green;
+    color: black;
+}
+
+#active{
+    background: green;
+    color: black;
+}
+
+.heading {
+    padding: 50px;
+    background: rgb(0,156,9);
+    background: linear-gradient(90deg, rgba(0,156,9,0.8589810924369747) 0%, rgba(0,0,0,0.8421743697478992) 100%, rgba(25,121,9,0.5760679271708684) 100%);
+    color: white;
+}
+
+.mainh1{
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+}
+
+.aboutauth{
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    flex: 1;
+}
+
+.aboutauth h1{
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    flex: 1;
+
+}
+.side-nav a{
+    color: green;
+    position: sticky;
+}
+
+.side-nav a:hover{
+    background: green;
+    color: black;
+}
+
+.inputset{
+    padding: 50px;
+    background: lightgrey;
+
+}
+
+.inputset h1{
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    text-align: center;
+}
+
+.inputset label{
+    font-family: 'VT323', monospace;
+    font-size: 17px;
+}
+
+.bttn{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    color: green;
+}
+
+.bttn1{
+    text-align: center;
+    padding: 20px;
+}
+
+.bttn:hover{
+    background: green;
+    color: black;
+
+}
+
+.footer2{
+    display: flex;
+    font-family: 'VT323', monospace;
+    border: 1px black solid;
+}
+.connect{
+    flex: 1;
+}
+
+.addr{
+    flex: 1;
+}
+
+.coninfo{
+    flex:1;
+}
+
+.fa-facebook{
+    color: #3b5998;
+    font-size: 40px;
+}
+.fa-twitter{
+    color: #00aced;
+    font-size: 40px;
+
+}
+.fa-instagram{
+    color: #517fa4;
+    font-size: 40px;
+
+}
+.fa-youtube{
+    color: #bb0000;
+    font-size: 40px;
+
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover{
+    color: green;
+}
+
+.connect,
+.addr,
+.coninfo{
+    font-size: 20px;
+}
+
+.connect h4,
+.addr h4,
+.coninfo h4{
+    font-size: 40px;
+}
+
+
+
+.addr, .coninfo, .connect{
+    text-align: center;
+}

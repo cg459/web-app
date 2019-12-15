@@ -9,24 +9,36 @@ function everythingFull() {
 
     if (a === '' ) {
         document.getElementById('replace1').innerHTML = 'The Email Field is empty. Please fill it out';
-    }if(b === "")
+    }else if(b === "")
     {
         document.getElementById('replace2').innerHTML = 'The Password Field is empty. Please fill it out';
-    }if(c ==="")
+    }else if(c ==="")
     {
         document.getElementById('replace3').innerHTML = 'The First Name Field is empty. Please fill it out';
     }
-    if(d ==="")
+    else if(d ==="")
     {
         document.getElementById('replace4').innerHTML = 'The Last Name Field is empty. Please fill it out';
     }
-    if(e ==="")
+    else if(e ==="")
     {
         document.getElementById('replace5').innerHTML = 'The Major Field is empty. Please fill it out';
     }
-    if(f ==="")
+    else if(f ==="")
     {
         document.getElementById('replace6').innerHTML = 'The college Field is empty. Please fill it out';
+    }
+    else()
+    {
+        document.getElementById('replace1').innerHTML = 'The college Field is empty. Please fill it out';
+        document.getElementById('replace2').innerHTML = 'The college Field is empty. Please fill it out';
+        document.getElementById('replace3').innerHTML = 'The college Field is empty. Please fill it out';
+        document.getElementById('replace4').innerHTML = 'The college Field is empty. Please fill it out';
+        document.getElementById('replace5').innerHTML = 'The college Field is empty. Please fill it out';
+        document.getElementById('replace6').innerHTML = 'The college Field is empty. Please fill it out';
+        document.getElementById('replace7').innerHTML = 'The college Field is empty. Please fill it out';
+
+
     }
 }
 

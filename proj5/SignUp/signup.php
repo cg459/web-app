@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="yeah">
-    <form id="form-user" method="post">
+    <form id="form-user" method="post" action="../model/SUfunction.php">
         <div class="nah">
              <div class="form-box" data-errormsg="">
                 <label for="input-email">E-mail.(Your E-maill will be your Username)</label>
@@ -38,7 +38,7 @@
 
            
             <div class="form-box">
-                <button id="button-send" onclick="everythingFull(); emailReg();">Sign up</button>
+                <button id="button-send">Sign up</button>
             </div>
             <div class="forError">
                 <p id="replace1"></>

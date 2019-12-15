@@ -3,8 +3,8 @@
     require('../model/PDObject.php');
     require ('../model/buttonFunctions.php');
     session_start();
-    $id4 = $_POST['id1'];
-     $_SESSION["taskID3"] = $id4
+    echo $id4 = $_POST['id1'];
+    $_SESSION["taskID3"] = $id4
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<form id="form-user" action="editFunction.php" method="post">
+<form id="form-user" action="editFunction1.php" method="post">
 
     <div class="form-box" data-errormsg="">
         <label for="input-password">Title</label>
@@ -34,27 +34,15 @@
 
 
     <div class="form-box">
-        <button id="button-send" onclick="emptyField();">Sign up</button>
-        <p id="replace"></p>
+        <button id="button-send">Sign up</button>
     </div>
-    <script>
-    function emptyField() {
-        var a = document.getElementById('title').value;
-        var b = document.getElementById('message').value;
-        var c = document.getElementById('deadline').value;
-        if (a === '' && b === '' && c === '') {
-            document.getElementById('replace').innerHTML = 'this is empty';
-        } else {
-            document.getElementById('replace').innerHTML = '';
-        }
-    }
-    </script>
     
 
 
 </form>
 </body>
 </html>
+
 
 
 

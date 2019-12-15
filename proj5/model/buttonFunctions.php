@@ -2,56 +2,51 @@
     require('PDObject.php');
     class bt
     {
-        function updateAll($dd, $message, $title, $email)
+        function updateAll($tid, $dd, $message, $title)
         {
             global $db;
 
             
-            $statement = "UPDATE todos SET duedate = :dd, message = :message, Title = :title WHERE owneremail = :email";
+            $statement = "UPDATE todos SET duedate = :dd, message = :message, Title = :title WHERE id= :id";
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":dd" , $dd);
             $statement2->bindValue(":message" , $message);
             $statement2->bindValue(":title" , $title);
-            $statement2->bindValue(":email" , $email);
+            $statement2->bindValue(":id" , $tid);
             $statement2->execute();
-            $statement->closeCursor();
         }
-        function updatedd($dd , $email)
+        function updatedd($tid, $dd)
         {
             global $db;
 
-            
-            $statement = "UPDATE todos SET duedate = :dd WHERE owneremail = :email";
+            $statement = "UPDATE todos SET duedate = :dd WHERE id = :id";
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":dd" , $dd);
-            $statement2->bindValue(":email" , $email);
+            $statement2->bindValue(":id" , $tid);
             $statement2->execute();
-            $statement->closeCursor();
         }
-        function updateMessage($message, $email)
+        function updateMessage($tid, $message)
         {
             global $db;
 
             
-            $statement = "UPDATE todos SET message = :message WHERE owneremail = :email";
+            $statement = "UPDATE todos SET message = :message WHERE id = :id";
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":message" , $message);
-            $statement2->bindValue(":email" , $email);
+            $statement2->bindValue(":id" , $tid);
             $statement2->execute();
-            $statement->closeCursor();
         }
         
-        function updatetitle( $title, $email)
+        function updatetitle($tid, $title)
         {
             global $db;
 
             
-            $statement = "UPDATE todos SET Title = :title WHERE owneremail = :email";
+            $statement = "UPDATE todos SET Title = :title WHERE id = :id";
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":title" , $title);
-            $statement2->bindValue(":email" , $email);
+            $statement2->bindValue(":id" , $tid);
             $statement2->execute();
-            $statement->closeCursor();
         }
         
         function delete($id)
@@ -62,7 +57,6 @@
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":message" , $id);
             $statement2->execute();
-            $statement2->closeCursor();
         }
         function insert($dd, $message, $email, $id, $time, $title1)
         {
@@ -86,7 +80,6 @@
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":message" , $message);
             $statement2->execute();
-            $statement->closeCursor();
         }
     
     function undoDone($message)
@@ -97,7 +90,6 @@
             $statement2 = $db->prepare($statement);
             $statement2->bindValue(":message" , $message);
             $statement2->execute();
-            $statement->closeCursor();
         }
     function checkDone($message)
     {
@@ -110,7 +102,6 @@
         $statement2->execute();
         $statement3 = $statement2->fetchall();
         $statement4 = $statement3[0]['isdone'];
-        $statement2->closeCursor();
     }
         
 }

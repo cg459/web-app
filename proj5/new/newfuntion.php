@@ -3,6 +3,7 @@
     require ('../model/buttonFunctions.php');
     require('../model/PDObject.php');
     session_start();
+    
     $title = $_POST['title'];
     $dd = $_POST['deadline'];
     $message = $_POST['message'];

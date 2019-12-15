@@ -38,8 +38,15 @@
                 $sth1->execute();
             }
     
+            if(isset($_POST['edit'])){
+                $id1 = $_POST['id'];
+                header("Location: ../edit/edit.php");
+                
+                
+            }
 			$gt = new TasksFunc();
 			$completed_tasks = $gt->get_isdone($_SESSION['uemail']);
+            
 ?>
 
         <div class='table'>
@@ -81,6 +88,13 @@
                     <input type="hidden" name="complete" value="true">
                 </div>
             </form>
+            <form method="POST" action='../edit/edit.php'>
+                <div class="foredit">
+                    <a href="../edit/edit.php"><input type="submit" name="edit" value="edit" href="../edit/edit.php"></input></a>
+                    <input type="hidden" name="id1" value="<?= $completed_tasks[$i]['id'] ?>">
+                    <input type="hidden" name="edit" value="true">
+                </div>
+            </form>
 </form>
                 </td>
     <?php
@@ -93,11 +107,6 @@
         </div>
             <style> button{margin-right:10%; margin-left: 10%; margin-top: 5%; display:inline;}</style>
         </form>
-        
-        
-
-        <p ID="yeah1"></p>
-
     </main>
 </body>
 

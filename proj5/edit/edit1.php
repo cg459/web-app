@@ -1,9 +1,9 @@
-
+<link rel="stylesheet" href="../css/forSU.css">
 <?php
     require('../model/PDObject.php');
     require ('../model/buttonFunctions.php');
     session_start();
-    echo $id4 = $_POST['id1'];
+    $id4 = $_POST['id1'];
     $_SESSION["taskID3"] = $id4
 ?>
 <!DOCTYPE html>

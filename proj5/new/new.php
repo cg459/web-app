@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/forSU.css">
 <?php
     require('../model/PDObject.php');
     require ('../model/buttonFunctions.php');

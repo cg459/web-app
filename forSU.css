@@ -1,0 +1,27 @@
+*{
+		padding-left: 0;
+		padding-right: 0;
+}
+html{
+    background: -moz-linear-gradient(-45deg, rgba(243,156,18,0.12) 5%, rgba(243,156,18,1) 26%, rgba(243,156,18,1) 34%, rgba(230,126,34,1) 66%, rgba(211,84,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(243,156,18,0.12) 5%,rgba(243,156,18,1) 26%,rgba(243,156,18,1) 34%,rgba(230,126,34,1) 66%,rgba(211,84,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(243,156,18,0.12) 5%,rgba(243,156,18,1) 26%,rgba(243,156,18,1) 34%,rgba(230,126,34,1) 66%,rgba(211,84,0,1) 100%) , linear-gradient(-90deg); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ff39c12', endColorstr='#d35400',GradientType=1 );
+}
+
+body{
+		border-style: double;
+		
+		
+}
+label{
+		display:flex;
+		flex-direction: row;
+		justify-content: row;
+		 text-align: right;
+		width: 400px;
+		line-height: 26px;
+		margin-bottom: 10px;
+}
+
+
